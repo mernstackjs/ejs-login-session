@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      section {
+        margin: 2em;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+        background-color: #eee;
+        padding: 0.5em;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 1em;
+      }
+
+      a:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Dashboard</h1>
+    </header>
+
+    <section>
+      <p>Hello, <%= user %></p>
+      <a href="/logout">Logout</a>
+    </section>
+  </body>
+</html>
